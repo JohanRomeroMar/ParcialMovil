@@ -6,6 +6,23 @@
     android:layout_height="match_parent"
     tools:context=".Read">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="435dp"
+        android:layout_height="404dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="500dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.12"
+        app:srcCompat="@drawable/blue_bg" />
+
     <Button
         android:id="@+id/btn_Return"
         android:layout_width="wrap_content"
@@ -14,6 +31,10 @@
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:text="Regresar"
+        android:textColor="#0073CF"
+        app:backgroundTint="#FFFFFF"
+        app:icon="@android:drawable/ic_menu_revert"
+        app:iconTint="#0073CF"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -21,12 +42,11 @@
         android:id="@+id/txt_GameName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="468dp"
         android:ems="10"
         android:hint="Nombre del juego"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.547"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -34,9 +54,11 @@
         android:id="@+id/btn_Consult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="156dp"
         android:text="Consultar"
+        app:backgroundTint="#0073CF"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_GameName" />
 </androidx.constraintlayout.widget.ConstraintLayout>

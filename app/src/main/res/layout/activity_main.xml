@@ -8,31 +8,66 @@
 
 
     <Button
-        android:id="@+id/btn_CREATE"
-        style="@style/Widget.MaterialComponents.Button.Icon"
-        android:layout_width="130dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="150dp"
-        android:text="CREATE"
-        app:icon="@drawable/outline_add_24"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <Button
         android:id="@+id/btn_READ"
         style="@style/Widget.MaterialComponents.Button.Icon"
         android:layout_width="130dp"
         android:layout_height="50dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginRight="65dp"
         android:text="READ"
+        app:backgroundTint="#0073CF"
         app:icon="@drawable/outline_auto_stories_24"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_CREATE"
+        app:layout_constraintStart_toEndOf="@+id/btn_CREATE"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.48000002"
         tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_CREATE"
+        style="@android:style/Widget.Material.Button"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:text="CREATE"
+        app:backgroundTint="#0073CF"
+        app:elevation="10dp"
+        app:icon="@drawable/outline_add_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_READ"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.48000002"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="436dp"
+        android:layout_height="372dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/blue_bg" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="95dp"
+        android:layout_height="77dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.115"
+        app:srcCompat="@drawable/logo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -35,11 +35,9 @@ class Create : AppCompatActivity() {
 
         buttonCreateGame.setOnClickListener {
             if (txtGameName.text.isNotEmpty() && txtGameValue.text.isNotEmpty() && txtGameDescription.text.isNotEmpty()){
-
                 game["Name"] = txtGameName.text.toString()
                 game["Value"] = txtGameValue.text.toString()
                 game["Description"] = txtGameDescription.text.toString()
-
                 db.collection("games").document(txtGameName.text.toString().trim().toLowerCase())
                     .set(game)
                 .addOnSuccessListener { alertSucces() }

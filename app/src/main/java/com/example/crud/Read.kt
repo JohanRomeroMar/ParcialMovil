@@ -42,9 +42,7 @@ class Read : AppCompatActivity() {
                 db.collection("games").document(txtGameName.text.toString().trim().toLowerCase())
                     .get()
                     .addOnSuccessListener {document ->
-
                         alertSucces()
-
                         game["Name"] = document.data?.get("Name").toString()
                         game["Value"] = document.data?.get("Value").toString()
                         game["Description"] = document.data?.get("Description").toString()
@@ -53,7 +51,6 @@ class Read : AppCompatActivity() {
                             putExtra("name", game["Name"].toString())
                             putExtra("value", game["Value"].toString())
                             putExtra("description", game["Description"].toString())
-
                         }
                         startActivity(infoIntent)
                     }
